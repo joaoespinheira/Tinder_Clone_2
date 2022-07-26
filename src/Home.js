@@ -1,10 +1,11 @@
 import Header from "./Header";
+import TinderCards from "./TinderCards";
 
 function Home() {
   return (
     <div>
       <Header />
-      <h1>This is the home page</h1>
+      <TinderCards />
     </div>
   );
 }
