@@ -16,7 +16,8 @@ function TinderCards() {
       setPeople(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getUsers();
-  }, []);
+  }, [people]);
+
   // const [people, setPeople] = useState([
   //   {
   //     name: "Angelina Jolie",
@@ -41,7 +42,6 @@ function TinderCards() {
   // }
   return (
     <div>
-      <h1>TinderCards</h1>
       <div className="tinderCards__cardContainer">
         {people.map((person) => (
           <TinderCard

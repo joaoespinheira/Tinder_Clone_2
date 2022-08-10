@@ -11,19 +11,48 @@ const SwipeButtons = () => {
   return (
     <div className="swipeButtons">
       <IconButton className="swipeButtons__repeat">
-        <ReplayIcon fontSize="large" />
+        <ReplayIcon
+          // sx={{
+          //   color: "rgba(255, 220, 61)",
+          // }}
+          style={{ color: "#f5b748" }}
+          fontSize="large"
+        />
       </IconButton>
       <IconButton className="swipeButtons__like">
-        <FavoriteIcon fontSize="large" />
+        <FavoriteIcon
+          style={{ color: "#d50000" }}
+          // sx={{
+          //   color: "#d50000",
+          // }}
+          fontSize="large"
+        />
       </IconButton>
       <IconButton className="swipeButtons__close">
-        <CloseIcon fontSize="large" />
+        <CloseIcon
+          style={{ color: "#76e2b3" }}
+          // sx={{
+          //   color: "#76e2b3",
+          // }}
+          fontSize="large"
+        />
       </IconButton>
       <IconButton className="swipeButtons__star">
-        <StarRateIcon fontSize="large" />
+        <StarRateIcon
+          style={{ color: "#62b4f9" }}
+          // sx={{
+          //   color: "#62b4f9",
+          // }}
+          fontSize="large"
+        />
       </IconButton>
       <IconButton className="swipeButtons__flash">
-        <FlashOnIcon fontSize="large" />
+        <FlashOnIcon
+          sx={{
+            color: "#915dd1",
+          }}
+          fontSize="large"
+        />
       </IconButton>
     </div>
   );
