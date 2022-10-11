@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ChatView from "./ChatView";
 import Home from "./Home";
 import Profile from "./Profile";
+import ChatScreen from "./ChatScreen";
+import ProfileSettings from "./ProfileSettings";
 // import { useEffect, useState } from "react";
 // import { collection, getDocs } from "firebase/firestore";
 // import { db } from "./firebase";
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="chatView" element={<ChatView />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="/chatView/:person" element={<ChatScreen />} />
+        <Route path="/Profile/:personSettings" element={<ProfileSettings />} />
       </Routes>
     </div>
   );

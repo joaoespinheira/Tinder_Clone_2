@@ -1,0 +1,43 @@
+.chats {
+  height: 80px;
+}
+
+.chats__peoples {
+  display: flex;
+  flex: 1;
+  width: 40%;
+  flex-direction: column;
+  border-right: solid 1px lightgray;
+}
+
+.chats__peoples__searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 39px;
+  padding: 10px;
+}
+.chats__peoples__searchContainer__searchBar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+.chats__peoples__searchContainer__searchBar > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+
+.chats__peoples__searchContainer__searchBar > input {
+  padding: 10px;
+  border: none;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.chats__peoples__chatsContainer {
+  flex: 1;
+  overflow: scroll;
+}

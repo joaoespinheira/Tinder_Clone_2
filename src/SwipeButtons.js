@@ -19,15 +19,7 @@ const SwipeButtons = () => {
           fontSize="large"
         />
       </IconButton>
-      <IconButton className="swipeButtons__like">
-        <FavoriteIcon
-          style={{ color: "#d50000" }}
-          // sx={{
-          //   color: "#d50000",
-          // }}
-          fontSize="large"
-        />
-      </IconButton>
+
       <IconButton className="swipeButtons__close">
         <CloseIcon
           style={{ color: "#76e2b3" }}
@@ -42,6 +34,15 @@ const SwipeButtons = () => {
           style={{ color: "#62b4f9" }}
           // sx={{
           //   color: "#62b4f9",
+          // }}
+          fontSize="large"
+        />
+      </IconButton>
+      <IconButton className="swipeButtons__like">
+        <FavoriteIcon
+          style={{ color: "#d50000" }}
+          // sx={{
+          //   color: "#d50000",
           // }}
           fontSize="large"
         />

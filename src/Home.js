@@ -5,7 +5,7 @@ import TinderCards from "./TinderCards";
 function Home() {
   return (
     <div>
-      <Header />
+      <Header msgButton="/" />
       <TinderCards />
 
       <SwipeButtons />

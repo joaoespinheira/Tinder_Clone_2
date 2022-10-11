@@ -1,0 +1,23 @@
+.profileSettings {
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.profileSettings__menu {
+  flex: 1;
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  max-width: 85vw;
+  height: 80vh;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 18px 53px 0px rgba(14, 14, 14);
+}
+
+.profileSettings__menu__text {
+  padding: 5vh;
+  padding-left: 25%;
+  padding-right: 25%;
+}

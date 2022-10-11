@@ -3,16 +3,25 @@ import "./Header.css";
 import PersonIcon from "@mui/icons-material/Person";
 import ForumIcon from "@mui/icons-material/Forum";
 import IconButton from "@mui/material/IconButton";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import LogoutIcon from "@mui/icons-material/Logout";
 
-function Header() {
+function Header({ backButton, msgButton }) {
+  const navigate = useNavigate();
   return (
     <div className="header">
-      <IconButton>
-        <Link to="/profile">
-          <PersonIcon className="header__icon" fontSize="large" />
-        </Link>
-      </IconButton>
+      {backButton ? (
+        <IconButton onClick={() => navigate(-1)}>
+          <ArrowBackIosIcon className="header__icon" fontSize="large" />
+        </IconButton>
+      ) : (
+        <IconButton>
+          <Link to="/profile">
+            <PersonIcon className="header__icon" fontSize="large" />
+          </Link>
+        </IconButton>
+      )}
       <IconButton>
         <Link to="/">
           <img
@@ -22,11 +31,19 @@ function Header() {
           ></img>
         </Link>
       </IconButton>
-      <IconButton>
-        <Link to="/chatView">
-          <ForumIcon className="header__icon" fontSize="large" />
-        </Link>
-      </IconButton>
+      {msgButton ? (
+        <IconButton>
+          <Link to="/chatView">
+            <ForumIcon className="header__icon" fontSize="large" />
+          </Link>
+        </IconButton>
+      ) : (
+        <IconButton>
+          <Link to="/chatView">
+            <LogoutIcon className="header__icon" fontSize="large" />
+          </Link>
+        </IconButton>
+      )}
     </div>
   );
 }
